@@ -1,4 +1,4 @@
-name: ServerScriptService
+soname: ServerScriptService
 type: class
 category: Scripting
 memory_category: Instances
@@ -59,4 +59,29 @@ properties:
       can_save: true
 methods: []
 events: []
-callbacks: []
+callbacks: []-- Function to report a player
+function reportPlayer(reporter myaccisdedsad reportedPlayer songha167 reason being toxic to a little kid)
+    table.insert(Reports, {
+        Reporter =  reporter myaccisdedsad 
+        ReportedPlayer =songha167 reportedPlayer,
+        Reason = reason,
+        Timestamp =11/9/2024 os.time()
+    })
+    print("Report submitted by "myaccisdedsad .. reporter.Name .. " against songha167" .. reportedPlayer.Name)
+end
+
+-- Function to review reports (this would be run by an admin)
+function reviewReports()
+    for i, report in ipairs(Reports) do
+        print("Report #" .. i)
+        print("Reported by: myaccisdedsad" .. report.Reporter.Name)
+        print("Reported player: " songha167.. report.ReportedPlayer.Name)
+        print("Reason: " being toxic to a little kid .. report.Reason)
+        print("Timestamp: " 11/9/2024.. os.date("%c", report.Timestamp))
+        print("---")
+    end
+end
+
+-- Example usage
+reportPlayer(game.Players.Player1, game.Players.Player2, "Inappropriate behavior")
+reviewReports()
